@@ -16,3 +16,27 @@ footer.footer{
     bottom: 0;
     width: 100%;
 }
+
+h1{
+    margin-left: 15px;
+}
+
+p{
+    font-family: $font-family-serif;
+    font-size: 18px;
+}
+
+.hero-scene{
+    background-image: url(../Images/Background.jpg);
+    background-size: cover;
+}
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}

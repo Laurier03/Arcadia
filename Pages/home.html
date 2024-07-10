@@ -1,2 +1,52 @@
-<h1>Bienvenue sur le site du zoo Arcadia</h1>
-<button class="btn btn-primary">Accueil</button>
+<h1>Accueil</h1>
+
+<div class="hero-scene">
+    <!--Création du div qui englobe le carrousel-->
+    <div id="carouselZoo" class="carousel slide" data-bs-ride="carousel">
+
+        <!--Ajout des indicateurs de pagination en bas de page-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!--On met en place le diaporama-->
+        <div class="carousel-inner">
+            <!--On place les éléments du diaporama-->  
+            <div class="carousel-item active c-item">
+                <img src="/Images/Background-forest.jpg" class="d-block w-100 c-img" alt="">
+                <!--On place la légende-->
+                <div class="carousel-caption top-0 mt-5">
+                    <h1 class="fs-1 text-uppercase">Arcadia</h1>
+                </div>
+                <div class="carousel-caption">
+                    <p>Situé près de la forêt de Brocéliande depuis 1960, le zoo accueille tout un panel d'animaux répartis dans leurs habitats appropriés et soignés</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/Images/Background-vsites.jpg" class="d-block w-100 c-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Visites</h3>
+                    <p>Venez rencontrer des animaux venus du monde entier en famille</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/Images/Train.jpg" class="d-block w-100 c-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Le train Safari</h3>
+                    <p>Et si vous visitiez le parc zoologique à bord de notre train Safari?</p>
+                </div>
+            </div>
+        </div>
+        <!--On met en place les controles précédent/suivant-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselZoo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselZoo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
