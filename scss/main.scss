@@ -7,7 +7,7 @@ html{
 }
 
 main{
-    margin-bottom: 250px;
+    margin-bottom: 500px;
 }
 
 footer.footer{
@@ -19,6 +19,12 @@ footer.footer{
 
 h1{
     margin-left: 15px;
+    margin-top: 15px;
+}
+
+h2{
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 p{
@@ -39,4 +45,8 @@ p{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.9);
+}
+
+.text-justify{
+    text-align: justify;
 }

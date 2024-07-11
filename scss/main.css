@@ -11976,7 +11976,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 500px;
 }
 
 footer.footer {
@@ -11988,6 +11988,12 @@ footer.footer {
 
 h1, .h1 {
   margin-left: 15px;
+  margin-top: 15px;
+}
+
+h2, .h2 {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 p {
@@ -12009,4 +12015,8 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.9);
+}
+
+.text-justify {
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-<h1>Accueil</h1>
+<h1 class="text-primary">Accueil</h1>
 
 <div class="hero-scene">
     <!--Création du div qui englobe le carrousel-->
@@ -9,13 +9,14 @@
             <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
 
         <!--On met en place le diaporama-->
         <div class="carousel-inner">
             <!--On place les éléments du diaporama-->  
             <div class="carousel-item active c-item">
-                <img src="/Images/Background-forest.jpg" class="d-block w-100 c-img" alt="">
+                <img src="/Images/Background-forest-3.jpg" class="d-block w-100 c-img" alt="">
                 <!--On place la légende-->
                 <div class="carousel-caption top-0 mt-5">
                     <h1 class="fs-1 text-uppercase">Arcadia</h1>
@@ -25,17 +26,24 @@
                 </div>
             </div>
             <div class="carousel-item c-item">
-                <img src="/Images/Background-vsites.jpg" class="d-block w-100 c-img" alt="">
+                <img src="/Images/Tigres-2.jpg" class="d-block w-100 c-img" alt="">
                 <div class="carousel-caption">
-                    <h3>Visites</h3>
+                    <h3>Visites guidées</h3>
                     <p>Venez rencontrer des animaux venus du monde entier en famille</p>
                 </div>
             </div>
             <div class="carousel-item c-item">
-                <img src="/Images/Train.jpg" class="d-block w-100 c-img" alt="">
+                <img src="/Images/Train-2.jpg" class="d-block w-100 c-img" alt="">
                 <div class="carousel-caption">
                     <h3>Le train Safari</h3>
                     <p>Et si vous visitiez le parc zoologique à bord de notre train Safari?</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/Images/perroquet.jpg" class="d-block w-100 c-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Venez admirer nos oiseaux</h3>
+                    <p>Venez dire Bonjour à Rosie le perroquet rose et ses amis</p>
                 </div>
             </div>
         </div>
@@ -50,3 +58,90 @@
         </button>
     </div>
 </div>
+
+<section>
+    <article>
+        <div class="container p-4">
+            <h2 class="text-center text-primary">Venez découvrir nos animaux et leurs habitats</h2>
+            <div class="row row-cols-3 align-items-center">
+                <div class="col">
+                    <img class="w-100 rounded-circle" src="../Images/Jungle.jpg"/>
+                    <div class="text-center pt-3">
+                        <a href="#" class= "btn btn-primary">Jungle</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="w-100 rounded-circle" src="../Images/Savane-2.jpeg"/>
+                    <div class="text-center pt-3">
+                        <a href="#" class= "btn btn-primary">Savane</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="w-100 rounded-circle" src="../Images/Marais.jpg"/>
+                    <div class="text-center pt-3">
+                        <a href="#" class= "btn btn-primary">Marais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="bg-dark text-white">
+        <div class="container p-4">
+            <h2 class="text-center text-secondary">Restauration</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <img class="w-100 rounded" src="../images/Restaurant.jpg"/>
+                </div>
+                <div class="col">
+                    <p>Un petit creux peut-être?</p>
+                    <p class="text-justify">
+                        Alors n'hésitez pas à venir vous régaler dans notre Restaurant à thème "C'est Croc'bon" pour reprendre des forces et vous relaxer.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a href="#" class="btn btn-secondary">Réserver une table</a>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="container p-4">
+            <h2 class="text-center text-primary">Visite Guidée du Zoo</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <p class="text-justify">
+                       Et pourquoi pas profiter de l'expertise de nos guides pour enrichir votre experience? Ainsi nos animaux n'auront plus de secret pour vous !
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="w-100 rounded" src="../Images/Visites-3.jpg"/>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a href="#" class="btn btn-secondary">Reserver une visite guidée</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="bg-dark text-white">
+        <div class="container p-4">
+            <h2 class="text-center text-secondary">Visite en petit train</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <img class="w-100 rounded" src="../Images/Train.jpg"/>
+                </div>
+                <div class="col">
+                    <p class="text-justify">
+                        Montez à bord d'un wagon et en route pour découvrir les animaux d'Arcadia. Immersion et sensation garanties !
+                    </p>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a href="#" class="btn btn-secondary">Monter à bord</a>
+            </div>
+        </div>
+    </article>
+
+</section>
