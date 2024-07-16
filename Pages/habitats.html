@@ -1,0 +1,412 @@
+<h1 class="text-primary">Nos habitats</h1>
+
+<div class="hero-scene">
+    <!--Création du div qui englobe le carrousel-->
+    <div id="carouselZoo" class="carousel slide" data-bs-ride="carousel">
+
+        <!--Ajout des indicateurs de pagination en bas de page-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!--On met en place le diaporama-->
+        <div class="carousel-inner">
+            <!--On place les éléments du diaporama-->  
+            <div class="carousel-item active c-item">
+                <img src="/Images/Savane-2.jpeg" class="d-block w-100 c-img" alt="">
+                <!--On place la légende-->
+                <div class="carousel-caption">
+                    <h3>La Savane</h3>
+                    <p>De vastes étendues brûlées par le soleil, une végétation éparse et rare, la savane reste tout de même le berceau de certaines des espèces les plus emblématiques de notre planète tels que les lions, les giraffes, les éléphants et les rhinocéros. On la trouve en Afrique (Mali, Burkina Faso, Niger, Nord de la Côte d'Ivoire, Kenya...), au Brésil, en Inde centrale, en Australie.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/Images/Jungle-2.jpg" class="d-block w-100 c-img" alt="">
+                <div class="carousel-caption">
+                    <h3>La Jungle</h3>
+                    <p>La jungle renferme près de 70 % des espèces végétales connues sur la Terre (de très nombreuses espèces restent encore à découvrir). On y dénombre entre 80 à 200 espèces différentes par hectare, mais il est rare de trouver deux individus de la même espèce sur un hectare. Il y a donc une extrême dispersion des individus végétaux.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/Images/Marais-2.jpg" class="d-block w-100 c-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Le Marais</h3>
+                    <p>Parmi les plus petits mammifères vivant à proximité des marais, on trouve les musaraignes, les lemmings, les campagnols, les rats musqués et les castors. On y compte aussi certains prédateurs comme les visons, les loutres, les lynx roux, l’insaisissable couguar et le renard gris.</p>
+                </div>
+            </div>
+        <!--On met en place les controles précédent/suivant-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselZoo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselZoo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center text-primary">La SAVANE</h2>
+    <p>La savane est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées (Graminées). Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.</p>
+    <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Elephant.jpg" class="rounded w-100"/>
+                <p class="titre-image">Ellie l'éléphant</p>
+                <div class="accordion" id="accordion-éléphant">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                          Ellie l'éléphant
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Ellie<br>
+                          <strong>Race:</strong> Eléphant de savane d'Afrique (Loxodonta africana)<br>
+                          <strong>Habitat:</strong> Savane<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Lion.jpg" class="rounded w-100"/>
+                <p class="titre-image">Leo le Lion</p>
+                <div class="accordion" id="accordion-lion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Leo le Lion
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Leo<br>
+                          <strong>Race:</strong> Lion (Panthera leo)<br>
+                          <strong>Habitat:</strong> Savane<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Zebre.jpg" class="rounded w-100"/>
+                <p class="titre-image">Zack le zèbre</p>
+                <div class="accordion" id="accordion-zèbre">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                          Zack le zèbre
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Zack<br>
+                          <strong>Race:</strong> Zèbre de Grévy (Equus grevyi)<br>
+                          <strong>Habitat:</strong> Savane<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center text-primary">La JUNGLE</h2>
+    <p>La jungle est un terme polysémique qui n'a pas de signification biogéographique précise. Ce terme est un emprunt du hindi via la langue anglaise. La jangal désigne alors une formation végétale sèche comptant une proportion irrégulière d'arbres présente principalement dans le Teraï. Le succès du livre de Rudyard Kipling, Le Livre de la jungle, a popularisé le terme qui désigne désormais, par extension optimale, selon Roger Brunet1, la forêt dense à la végétation verte et luxuriante, telle que la forêt tropicale.</p>
+    <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Toucan.jpg" class="rounded w-100"/>
+                <p class="titre-image">Touckie le toucan</p>
+                <div class="accordion" id="accordion-toucan">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                          Touckie le toucon
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Touckie<br>
+                          <strong>Race:</strong> Toucan toco (Ramphastos toco)<br>
+                          <strong>Habitat:</strong> Jungle<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/perroquet.jpg" class="rounded w-100"/>
+                <p class="titre-image">Pinkie le cacatoès rosablin</p>
+                <div class="accordion" id="accordion-cacatoès">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                          Pinkie le cacatoès
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Pïnkie<br>
+                          <strong>Race:</strong> Cacatoès rosalbin (Eolophus roseicapilla)<br>
+                          <strong>Habitat:</strong> Jungle<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Tigre-3.jpg" class="rounded w-100"/>
+                <p class="titre-image">Timon le Tigre</p>
+                <div class="accordion" id="accordion-tigre">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                          Timon le tigre
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Timon<br>
+                          <strong>Race:</strong> Tigre (Panthera tigris)<br>
+                          <strong>Habitat:</strong> Jungle<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwelve">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center text-primary">Le MARAIS</h2>
+    <p>En géographie, un marais est une couche d'eau stagnante, en général peu profonde, et envahie par la végétation aquatique ou herbacée. C'est une zone humide. La végétation des marais est constituée d'espèces adaptées au milieu humide. Sa composition varie selon la hauteur de l'eau, l'importance des périodes d'assèchement, et le taux de salinité. Les espèces dominantes sont les poacées (roseaux), typhacées (massettes), les joncacées (joncs), cypéracées (carex), et autres plantes herbacées et aquatiques, et des plantes ligneuses basses. Dans les marais d'eau saumâtre, on rencontre des espèces halophiles.</p>
+    <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Castor.jpg" class="rounded w-100"/>
+                <p class="titre-image">Cooper le castor</p>
+                <div class="accordion" id="accordion-castor">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseThirteen">
+                          Cooper le castor
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThirteen">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Cooper<br>
+                          <strong>Race:</strong> Castor (Castor fiber)<br>
+                          <strong>Habitat:</strong> Marais<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseFourteen">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFourteen">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Loutre.jpeg" class="rounded w-100"/>
+                <p class="titre-image">Lilou la loutre</p>
+                <div class="accordion" id="accordion-loutre">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingFifteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseFifteen">
+                          Lilou la loutre
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFifteen">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Lilou<br>
+                          <strong>Race:</strong> Loutre (Lutrinae)<br>
+                          <strong>Habitat:</strong> Marais<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingSixteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseSixteen">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSixteen">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img src="../Images/animaux/Héron.jpg" class="rounded w-100"/>
+                <p class="titre-image">Hector le héron</p>
+                <div class="accordion" id="accordion-héron">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingSeventeen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeventeen" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeventeen">
+                          Hector le héron
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeventeen">
+                        <div class="accordion-body">
+                          <strong>Prénom:</strong> Hector<br>
+                          <strong>Race:</strong> Héron cendré (Ardea cinerea)<br>
+                          <strong>Habitat:</strong> Marais<br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingEighteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEighteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseEighteen">
+                          Avis du vétérinaire
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEighteen">
+                        <div class="accordion-body">
+                          <strong>Etat de l'animal:</strong> <br>
+                          <strong>Nourriture proposée:</strong> <br>
+                          <strong>Grammage de la nourriture:</strong> <br>
+                          <strong>Date de passage:</strong> <br>
+                          <strong>Détail de l'animal:</strong> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
