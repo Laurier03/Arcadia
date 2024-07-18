@@ -27,13 +27,15 @@
                 <div class="carousel-caption">
                     <h3>La Savane</h3>
                     <p>De vastes étendues brûlées par le soleil, une végétation éparse et rare, la savane reste tout de même le berceau de certaines des espèces les plus emblématiques de notre planète tels que les lions, les giraffes, les éléphants et les rhinocéros. On la trouve en Afrique (Mali, Burkina Faso, Niger, Nord de la Côte d'Ivoire, Kenya...), au Brésil, en Inde centrale, en Australie.</p>
-                </div>
+                    <a href="#savane" class="btn btn-primary">S'y rendre?</a>
+                  </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="/Images/Jungle-2.jpg" class="d-block w-100 c-img" alt="">
                 <div class="carousel-caption">
                     <h3>La Jungle</h3>
                     <p>La jungle renferme près de 70 % des espèces végétales connues sur la Terre (de très nombreuses espèces restent encore à découvrir). On y dénombre entre 80 à 200 espèces différentes par hectare, mais il est rare de trouver deux individus de la même espèce sur un hectare. Il y a donc une extrême dispersion des individus végétaux.</p>
+                    <a href="#jungle" class="btn btn-primary">S'y rendre?</a>
                 </div>
             </div>
             <div class="carousel-item c-item">
@@ -41,6 +43,7 @@
                 <div class="carousel-caption">
                     <h3>Le Marais</h3>
                     <p>Parmi les plus petits mammifères vivant à proximité des marais, on trouve les musaraignes, les lemmings, les campagnols, les rats musqués et les castors. On y compte aussi certains prédateurs comme les visons, les loutres, les lynx roux, l’insaisissable couguar et le renard gris.</p>
+                    <a href="#marais" class="btn btn-primary">S'y rendre?</a>
                 </div>
             </div>
         <!--On met en place les controles précédent/suivant-->
@@ -65,11 +68,18 @@
 
 <!--SAVANE-->
 <div class="container p-4">
-    <h2 class="text-center text-primary">La SAVANE</h2>
-    <div class="text-center">
+    <h2 id="savane" class="text-center text-primary">La SAVANE</h2>
+    <div class="image-card text-center">
         <img src="/Images/Savane-2.jpg" class="text-center rounded w-100" alt="Image d'un éléphant dans la savane">
+        <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+        </div>
     </div>
-    <p class="text-justify p-4">La <strong>Savane</strong> est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées (Graminées). Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.</p>
+    <p class="text-justify pt-4">La <strong>Savane</strong> est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées (Graminées). Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.</p>
+    <div class="text-center">
+      <button class="btn btn-secondary">Modifier texte</button>
+    </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
@@ -260,11 +270,18 @@
 
 <!--JUNGLE-->
 <div class="container p-4">
-    <h2 class="text-center text-primary">La JUNGLE</h2>
-    <div class="text-center">
+    <h2 id="jungle" class="text-center text-primary">La JUNGLE</h2>
+    <div class="image-card text-center">
         <img src="/Images/Jungle-3.jpg" class="text-center rounded w-100" alt="Image d'un éléphant dans la savane">
+        <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+        </div>
     </div>
-    <p class="text-justify p-4">La jungle est un terme polysémique qui n'a pas de signification biogéographique précise. Ce terme est un emprunt du hindi via la langue anglaise. La jangal désigne alors une formation végétale sèche comptant une proportion irrégulière d'arbres présente principalement dans le Teraï. Le succès du livre de Rudyard Kipling, Le Livre de la jungle, a popularisé le terme qui désigne désormais, par extension optimale, selon Roger Brunet1, la forêt dense à la végétation verte et luxuriante, telle que la forêt tropicale.</p>
+    <p class="text-justify pt-4">La jungle est un terme polysémique qui n'a pas de signification biogéographique précise. Ce terme est un emprunt du hindi via la langue anglaise. La jangal désigne alors une formation végétale sèche comptant une proportion irrégulière d'arbres présente principalement dans le Teraï. Le succès du livre de Rudyard Kipling, Le Livre de la jungle, a popularisé le terme qui désigne désormais, par extension optimale, selon Roger Brunet1, la forêt dense à la végétation verte et luxuriante, telle que la forêt tropicale.</p>
+    <div class="text-center">
+        <button class="btn btn-secondary">Modifier texte</button>
+    </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
@@ -455,11 +472,18 @@
 
 <!--MARAIS-->
 <div class="container p-4">
-    <h2 class="text-center text-primary">Le MARAIS</h2>
-    <div class="text-center">
+    <h2 id="marais" class="text-center text-primary">Le MARAIS</h2>
+    <div class="image-card text-center">
         <img src="/Images/Marais-3.jpg" class="text-center rounded w-100" alt="Image de castors dans un marais">
+        <div class="action-image-buttons">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+        </div>
     </div>
-    <p class="text-justify p-4">En géographie, un marais est une couche d'eau stagnante, en général peu profonde, et envahie par la végétation aquatique ou herbacée. C'est une zone humide. La végétation des marais est constituée d'espèces adaptées au milieu humide. Sa composition varie selon la hauteur de l'eau, l'importance des périodes d'assèchement, et le taux de salinité. Les espèces dominantes sont les poacées (roseaux), typhacées (massettes), les joncacées (joncs), cypéracées (carex), et autres plantes herbacées et aquatiques, et des plantes ligneuses basses. Dans les marais d'eau saumâtre, on rencontre des espèces halophiles.</p>
+    <p class="text-justify pt-4">En géographie, un marais est une couche d'eau stagnante, en général peu profonde, et envahie par la végétation aquatique ou herbacée. C'est une zone humide. La végétation des marais est constituée d'espèces adaptées au milieu humide. Sa composition varie selon la hauteur de l'eau, l'importance des périodes d'assèchement, et le taux de salinité. Les espèces dominantes sont les poacées (roseaux), typhacées (massettes), les joncacées (joncs), cypéracées (carex), et autres plantes herbacées et aquatiques, et des plantes ligneuses basses. Dans les marais d'eau saumâtre, on rencontre des espèces halophiles.</p>
+    <div class="text-center">
+        <button class="btn btn-secondary">Modifier texte</button>
+    </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
@@ -645,6 +669,33 @@
 <div class="container-bg pt-4">
   <div class="container">
       <br>
+  </div>
+</div>
+
+<!-- Modal pour Habitats-->
+<div class="modal fade" id="ModifHabitatModal" tabindex="-1" aria-labelledby="ModifHabitatModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="ModifHabitatModalLabel">Modifier Habitats</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+              <label for="NameInput" class="form-label">Habitats</label>
+              <input type="text" class="form-control" id="EmailInput" placeholder="Description">
+          </div>
+          <div class="mb-3">
+              <label for="ImageInput" class="form-label">Image</label>
+              <input type="file" class="form-control" id="ImageInput">
+          </div>
+          <div class="text-center">
+              <button type="button" class="btn btn-primary">Enregistrer</button>
+          </div>
+      </form>
+      </div>
+    </div>
   </div>
 </div>
 

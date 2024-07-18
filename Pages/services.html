@@ -1,1 +1,141 @@
 <h1 class="text-primary">Nos services</h1>
+  
+  <div class="hero-scene">
+      <!--Création du div qui englobe le carrousel-->
+      <div id="carouselZoo" class="carousel slide" data-bs-ride="carousel">
+  
+          <!--Ajout des indicateurs de pagination en bas de page-->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselZoo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+  
+          <!--On met en place le diaporama-->
+          <div class="carousel-inner">
+              <!--On place les éléments du diaporama-->  
+              <div class="carousel-item active c-item">
+                  <img src="/Images/Guide.jpg" class="d-block w-100 c-img" alt="">
+                  <!--On place la légende-->
+                  <div class="carousel-caption">
+                      <h3>Partez à l'aventure</h3>
+                      <p>Nos guides professionnels se feront une joie de vous faire visiter l'integralité du zoo de l'Arcadia</p>
+                      <a href="#visite" class="btn btn-primary">En savoir plus</a>
+                    </div>
+              </div>
+              <div class="carousel-item c-item">
+                  <img src="/Images/dining_hero_1.jpg" class="d-block w-100 c-img" alt="">
+                  <div class="carousel-caption">
+                      <h3>Une petite faim?</h3>
+                      <p>Le restaurant <strong>Un p'tit Croc</strong> vous ouvre ses porte, alors pourquoi ne pas y faire une halte</p>
+                      <a href="#resto" class="btn btn-primary">En savoir plus</a>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                  <img src="/Images/Train-2.jpg" class="d-block w-100 c-img" alt="">
+                  <div class="carousel-caption">
+                      <h3>Le petit Train</h3>
+                      <p>Montez à bord de notre petit train de safari, exploration et sensations garanties!</p>
+                      <a href="#train" class="btn btn-primary">En savoir plus</a>
+                  </div>
+              </div>
+          <!--On met en place les controles précédent/suivant-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselZoo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselZoo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+
+<div class="container p-4">
+    <h2>Venez découvrir les services que nous proposons</h2>
+
+    <!--Espace de séparation (Esthétique)-->
+    <div class="container-bg p-4 rounded">
+        <div class="container">
+            <br>
+        </div>
+    </div>
+
+    <article>
+        <div class="container">
+            <h2 id="visite" class="text-start text-primary">Une visite au Zoo</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <div class="image-card">
+                        <img class="w-100 rounded" src="../images/Visites-2.jpg"/>
+                        <div class="action-image-buttons">
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Une petite visite du Parc zoologique</h3>
+                    <p class="text-justify">
+                        Venez découvrir l'aventure zoologique proposée par ARCADIA, des guides professionnels seront à votre disposition dès l'entrée du parc pour un tour du monde animalier. En collaboration avec nos partenaires et dans le respect du bien-être animal, ARCADIA vous offre la meilleur experience Safari pour vous et vos proches. Alors qu'attendez-vous? Rejoignez-nous à l'entrée du parc et suivez un guide c'est gratuit!
+                    </p>
+                    <div class="text-center">
+                        <button class="btn btn-secondary">Modifier texte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="container">
+            <h2 id="resto" class="text-end text-primary">Le p'tit Croc</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <h3>Un petit creux peut-être?</h3>
+                    <p class="text-justify">
+                        Alors n'hésitez pas à venir vous régaler dans notre Restaurant à thème "Un p'tit Croc" pour reprendre des forces et vous relaxer. Nos chefs vous proposerons des plats éxoriques à thèmes mais aussi des valeurs sûr pour les moins téméraires. Possibilité de reserver une table à l'accueil du restaurant.
+                    </p>
+                    <div class="text-center">
+                        <button class="btn btn-secondary">Modifier texte</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="image-card">
+                        <img class="w-100 rounded" src="../images/Resto.jpg"/>
+                        <div class="action-image-buttons">
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="container">
+            <h2 id="train" class="text-start text-primary">Visite en train</h2>
+            <div class="row row-cols-2 align-items-center">
+                <div class="col">
+                    <div class="image-card">
+                        <img class="w-100 rounded" src="../images/Train-3.jpg"/>
+                        <div class="action-image-buttons">
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Embarquez à bord d'un de nos trains Safari</h3>
+                    <p class="text-justify">
+                        Marcher c'est bien, mais un train c'est <strong>MIEUX</strong>! Alors montez à bord d'un de nos petits train animaliers, Les tickets sont servis à l'entrée du parc alors pensez-y.
+                    </p>
+                    <div class="text-center">
+                        <button class="btn btn-secondary">Modifier texte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
