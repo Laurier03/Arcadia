@@ -1,1 +1,46 @@
 <h1 class="text-primary">Espace Administrateur</h1>
+
+<div class="bg-dark">
+    <div class="hero-scene-content text-center text-white">
+        <h2>Inscription d'un nouveau profil</h2>
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3 text-center">
+            <select class="star-rating">
+                <option value="">Employé</option>
+                <option value="1">Vétérinaire</option>
+            </select>
+        </div>
+        <div class="mb-3">
+          <label for="EmailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="EmailInput" placeholder="@mail.fr" name="Email">
+          <div class="invalid-feedback">
+            Le mail n'est pas au bon format
+          </div> 
+        </div>
+        <div class="mb-3">
+          <label for="PasswordInput" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="PasswordInput" name="Password">
+          <div class="invalid-feedback">
+            Le mot de passe est trop faible: Au moins 8 caractères, 1 lettre majuscule, 1 lettre minuscule, 1 chiffre et 1 caractère spécial
+          </div>
+          <div class="valid-feedback">
+            Le mot de passe est bon
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="ValidatePasswordInput" class="form-label">Confirmez votre mot de passe</label>
+            <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+            <div class="invalid-feedback">
+                La confirmation n'est pas identique au mot de passe
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+        </div>
+    </form>
+</div>

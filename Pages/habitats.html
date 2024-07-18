@@ -71,14 +71,14 @@
     <h2 id="savane" class="text-center text-primary">La SAVANE</h2>
     <div class="image-card text-center">
         <img src="/Images/Savane-2.jpg" class="text-center rounded w-100" alt="Image d'un éléphant dans la savane">
-        <div class="action-image-buttons">
+        <div class="action-image-buttons" data-show="admin">
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
         </div>
     </div>
     <p class="text-justify pt-4">La <strong>Savane</strong> est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées (Graminées). Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.</p>
     <div class="text-center">
-      <button class="btn btn-secondary">Modifier texte</button>
+      <button class="btn btn-secondary" data-show="admin">Modifier texte</button>
     </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
     <div class="row row-cols-2 row-cols-lg-3">
@@ -86,7 +86,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Elephant.jpg" class="rounded w-100" alt="Image d'un éléphant"/>
                 <p class="titre-image">Ellie l'éléphant</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutSavaneModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -102,7 +102,7 @@
                                 <strong>Prénom:</strong> Ellie<br>
                                 <strong>Race:</strong> Eléphant de savane d'Afrique (Loxodonta africana)<br>
                                 <strong>Habitat:</strong> Savane<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -122,8 +122,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +138,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Lion.jpg" class="rounded w-100" alt="Image d'un lion"/>
                 <p class="titre-image">Leo le Lion</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutSavaneModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -151,7 +154,7 @@
                                 <strong>Prénom:</strong> Leo<br>
                                 <strong>Race:</strong> Lion (Panthera leo)<br>
                                 <strong>Habitat:</strong> Savane<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -171,8 +174,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-secondary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +190,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Zebre.jpg" class="rounded w-100" alt="Image d'un zèbre"/>
                 <p class="titre-image">Zack le zèbre</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutSavaneModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -200,7 +206,7 @@
                                 <strong>Prénom:</strong> Zack<br>
                                 <strong>Race:</strong> Zèbre de Grévy (Equus grevyi)<br>
                                 <strong>Habitat:</strong> Savane<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -220,8 +226,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +239,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center" data-show="admin">
       <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#AjoutSavaneModal">Ajouter un animal</button>
   </div>
 </div>
@@ -253,7 +262,7 @@
                   <label for="ImageInput" class="form-label">Image</label>
                   <input type="file" class="form-control" id="ImageInput">
               </div>
-              <div class="text-center">
+              <div class="text-center" data-show="admin">
                   <button type="button" class="btn btn-primary">Enregistrer</button>
               </div>
           </form>
@@ -273,13 +282,13 @@
     <h2 id="jungle" class="text-center text-primary">La JUNGLE</h2>
     <div class="image-card text-center">
         <img src="/Images/Jungle-3.jpg" class="text-center rounded w-100" alt="Image d'un éléphant dans la savane">
-        <div class="action-image-buttons">
+        <div class="action-image-buttons" data-show="admin">
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
         </div>
     </div>
     <p class="text-justify pt-4">La jungle est un terme polysémique qui n'a pas de signification biogéographique précise. Ce terme est un emprunt du hindi via la langue anglaise. La jangal désigne alors une formation végétale sèche comptant une proportion irrégulière d'arbres présente principalement dans le Teraï. Le succès du livre de Rudyard Kipling, Le Livre de la jungle, a popularisé le terme qui désigne désormais, par extension optimale, selon Roger Brunet1, la forêt dense à la végétation verte et luxuriante, telle que la forêt tropicale.</p>
-    <div class="text-center">
+    <div class="text-center" data-show="admin">
         <button class="btn btn-secondary">Modifier texte</button>
     </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
@@ -288,7 +297,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Toucan.jpg" class="rounded w-100" alt="Image d'un toucan"/>
                 <p class="titre-image">Touckie le toucan</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutJungleModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -304,7 +313,7 @@
                                 <strong>Prénom:</strong> Touckie<br>
                                 <strong>Race:</strong> Toucan toco (Ramphastos toco)<br>
                                 <strong>Habitat:</strong> Jungle<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -324,8 +333,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +349,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/perroquet.jpg" class="rounded w-100" alt="Image d'un perroquet"/>
                 <p class="titre-image">Pinkie le cacatoès rosablin</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutJungleModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -353,7 +365,7 @@
                                 <strong>Prénom:</strong> Pïnkie<br>
                                 <strong>Race:</strong> Cacatoès rosalbin (Eolophus roseicapilla)<br>
                                 <strong>Habitat:</strong> Jungle<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -373,8 +385,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -386,7 +401,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Tigre-3.jpg" class="rounded w-100" alt="Image d'un tigre"/>
                 <p class="titre-image">Timon le Tigre</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutJungleModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light"><i class="bi bi-x-circle" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"></i></button>
                 </div>
@@ -402,7 +417,7 @@
                                 <strong>Prénom:</strong> Timon<br>
                                 <strong>Race:</strong> Tigre (Panthera tigris)<br>
                                 <strong>Habitat:</strong> Jungle<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -422,8 +437,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -432,7 +450,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center" data-show="admin">
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#AjoutJungleModal">Ajouter un animal</button>
     </div>
 </div>
@@ -475,13 +493,13 @@
     <h2 id="marais" class="text-center text-primary">Le MARAIS</h2>
     <div class="image-card text-center">
         <img src="/Images/Marais-3.jpg" class="text-center rounded w-100" alt="Image de castors dans un marais">
-        <div class="action-image-buttons">
+        <div class="action-image-buttons" data-show="admin">
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifHabitatModal"><i class="bi bi-pencil-square"></i></button>
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
         </div>
     </div>
     <p class="text-justify pt-4">En géographie, un marais est une couche d'eau stagnante, en général peu profonde, et envahie par la végétation aquatique ou herbacée. C'est une zone humide. La végétation des marais est constituée d'espèces adaptées au milieu humide. Sa composition varie selon la hauteur de l'eau, l'importance des périodes d'assèchement, et le taux de salinité. Les espèces dominantes sont les poacées (roseaux), typhacées (massettes), les joncacées (joncs), cypéracées (carex), et autres plantes herbacées et aquatiques, et des plantes ligneuses basses. Dans les marais d'eau saumâtre, on rencontre des espèces halophiles.</p>
-    <div class="text-center">
+    <div class="text-center" data-show="admin">
         <button class="btn btn-secondary">Modifier texte</button>
     </div>
     <h3 class="text-center text-primary">Nos Animaux</h3>
@@ -490,7 +508,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Castor.jpg" class="rounded w-100" alt="Image d'un castor"/>
                 <p class="titre-image">Cooper le castor</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutMaraisModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light"><i class="bi bi-x-circle" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"></i></button>
                 </div>
@@ -506,7 +524,7 @@
                                 <strong>Prénom:</strong> Cooper<br>
                                 <strong>Race:</strong> Castor (Castor fiber)<br>
                                 <strong>Habitat:</strong> Marais<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -526,8 +544,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -539,7 +560,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Loutre.jpeg" class="rounded w-100" alt="Image d'une loutre"/>
                 <p class="titre-image">Lilou la loutre</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutMaraisModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light"><i class="bi bi-x-circle" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"></i></button>
                 </div>
@@ -555,7 +576,7 @@
                                 <strong>Prénom:</strong> Lilou<br>
                                 <strong>Race:</strong> Loutre (Lutrinae)<br>
                                 <strong>Habitat:</strong> Marais<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                   <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -575,8 +596,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong> <br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -588,7 +612,7 @@
             <div class="image-card text-white">
                 <img src="../Images/animaux/Héron.jpg" class="rounded w-100" alt="Image d'un héron"/>
                 <p class="titre-image">Hector le héron</p>
-                <div class="action-image-buttons">
+                <div class="action-image-buttons" data-show="admin">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#AjoutMaraisModal"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAnimalModal"><i class="bi bi-x-circle"></i></button>
                 </div>
@@ -604,7 +628,7 @@
                                 <strong>Prénom:</strong> Hector<br>
                                 <strong>Race:</strong> Héron cendré (Ardea cinerea)<br>
                                 <strong>Habitat:</strong> Marais<br>
-                                <div class="text-center">
+                                <div class="text-center" data-show="admin">
                                   <button class="btn btn-secondary">Modifier</button>
                                 </div>
                             </div>
@@ -624,8 +648,11 @@
                                 <strong>Date de passage:</strong> <br>
                                 <strong>Détail de l'animal:</strong> <br>
                                 <strong>Avis global:</strong></br>
-                                <div class="text-center">
+                                <div class="text-start" data-show="admin">
                                     <button class="btn btn-secondary">Modifier</button>
+                                </div>
+                                <div class="text-end" data-show="vétérinaire">
+                                    <button class="btn btn-primary">Soumettre un compte rendu</button>
                                 </div>
                             </div>
                         </div>
@@ -634,7 +661,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center" data-show="admin">
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#AjoutMaraisModal">Ajouter un animal</button>
     </div>
 </div>
