@@ -11,8 +11,8 @@ export default class Route {
 /*
 [] -> Tout le monde peut y accéder
 ["disconnected"] -> Réserver aux utilisateurs déconectés
-["employé"] -> Réserver aux utilisateurs vétérinaire
-["vétérinaire"] -> Réserver aux utilisateurs employé
+["employé"] -> Réserver aux utilisateurs employé
+["vétérinaire"] -> Réserver aux utilisateurs vétérinaire
 ["admin"] -> Réserver aux utilisateurs admins
 ["admin","employé"] -> Reserver aux admins et employés
 ["admin","vétérinaire"] -> Reserver aux admins et vétérinaire

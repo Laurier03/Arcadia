@@ -88,12 +88,12 @@ function showAndHideElementsForRoles(){
                 }
                 break;
             case 'employé':
-                if(!userConnected || role != "admin"){
+                if(!userConnected || role != "employé"){
                     element.classList.add("d-none");
                 }
                 break;
             case 'vétérinaire':
-                if(!userConnected || role != "admin"){
+                if(!userConnected || role != "vétérinaire"){
                     element.classList.add("d-none");
                 }
                 break;
