@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
-@import url("/node_modules/star-rating.js/dist/star-rating.css");
 .navbar {
   background-image: linear-gradient(90deg, rgb(242, 238, 238) 0%, rgb(176, 241, 136) 43%, rgb(101, 139, 78) 69%);
 }
@@ -12060,4 +12059,8 @@ p {
   background-position: center;
   width: auto;
   height: auto;
+}
+
+th {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

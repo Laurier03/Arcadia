@@ -1,15 +1,30 @@
 <h1 class="text-primary">Espace Administrateur</h1>
 
-<div class="bg-dark">
-  <div class="hero-scene-content text-center text-white">
-    <h2>Inscription d'un nouveau profil</h2>
+<!--Espace de séparation (Esthétique)-->
+<div class="container-bg pt-4">
+  <div class="container">
+    <br />
   </div>
 </div>
 
+<!-- Petit menu de navigation-->
+<div class="text-center pt-4">
+  <a href="#profil" class="btn btn-secondary">Nouveau Profil</a>
+  <a href="#info" class="btn btn-secondary">Informations bas-de-page</a>
+  <a href="#cr" class="btn btn-secondary">Compte-rendus</a>
+  <a href="#stats" class="btn btn-secondary">Statistiques du zoo</a>
+</div>
+
+<!-- Création du compte employé ou vétérinaire-->
 <div class="container">
+  <div class="bg-dark">
+    <div id="profil" class="hero-scene-content text-center text-white">
+      <h2>Inscription d'un nouveau profil</h2>
+    </div>
+  </div>
   <form>
     <div class="mb-3 text-center">
-      <select class="star-rating">
+      <select id="profil" class="star-rating">
         <option value="">Employé</option>
         <option value="1">Vétérinaire</option>
       </select>
@@ -17,110 +32,241 @@
 
     <div class="mb-3">
       <label for="EmailInput" class="form-label">Email</label>
-      <input type="email" class="form-control" id="EmailInput" placeholder="@mail.fr" name="Email">
-      <div class="invalid-feedback">
-        Le mail n'est pas au bon format
-      </div> 
+      <input
+        type="email"
+        class="form-control"
+        id="EmailInput"
+        placeholder="@mail.fr"
+        name="Email"
+      />
+      <div class="invalid-feedback">Le mail n'est pas au bon format</div>
     </div>
 
     <div class="mb-3">
       <label for="PasswordInput" class="form-label">Mot de passe</label>
-      <input type="password" class="form-control" id="PasswordInput" name="Password">
+      <input
+        type="password"
+        class="form-control"
+        id="PasswordInput"
+        name="Password"
+      />
       <div class="invalid-feedback">
-        Le mot de passe est trop faible: Au moins 8 caractères, 1 lettre majuscule, 1 lettre minuscule, 1 chiffre et 1 caractère spécial
+        Le mot de passe est trop faible: Au moins 8 caractères, 1 lettre
+        majuscule, 1 lettre minuscule, 1 chiffre et 1 caractère spécial
       </div>
-      <div class="valid-feedback">
-        Le mot de passe est bon
-      </div>
+      <div class="valid-feedback">Le mot de passe est bon</div>
     </div>
 
     <div class="mb-3">
-      <label for="ValidatePasswordInput" class="form-label">Confirmez votre mot de passe</label>
-      <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+      <label for="ValidatePasswordInput" class="form-label"
+        >Confirmez votre mot de passe</label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="ValidatePasswordInput"
+        name="PasswordConfirm"
+      />
       <div class="invalid-feedback">
         La confirmation n'est pas identique au mot de passe
       </div>
     </div>
 
-    <div class="text-center">
-      <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscrire un nouveau profil</button>
+    <div class="text-center pb-4">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        id="btn-validation-inscription"
+      >
+        Inscrire un nouveau profil
+      </button>
     </div>
   </form>
 </div>
 
-<div class="bg-dark">
-  <div class="hero-scene-content text-center text-white">
-    <h2>Informations bas de page</h2>
-  </div>
-</div>
-
 <div class="container">
+  <!--Espace de séparation (Esthétique)-->
+  <div id="info" class="container-bg pt-4">
+    <div class="container">
+      <br />
+    </div>
+  </div>
+  <div class="bg-dark">
+    <div class="hero-scene-content text-center text-white">
+      <h2>Informations bas de page</h2>
+    </div>
+  </div>
   <div class="text-start">
-    <h3> Informations en bas de page</h3>
+    <h3>Informations en bas de page</h3>
     <form>
       <div class="mb-3">
-        <label for="formHoraireZooInput" class="form-label">Horaires du Zoo:</label>
-        <input type="text" class="form-control" id="formHoraireZooInput" placeholder="Ouvert du mardi au dimanche de 9h30 à 21h30">
+        <label for="formHoraireZooInput" class="form-label"
+          >Horaires du Zoo:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formHoraireZooInput"
+          placeholder="Ouvert du mardi au dimanche de 9h30 à 21h30"
+        />
       </div>
       <div class="mb-3">
-        <label for="formHoraireRestoInput" class="form-label">Horaires du restaurant:</label>
-        <input type="text" class="form-control" id="formHoraireRestoInput" placeholder="Restaurant du Zoo ouvert de 11h à 14h puis de 18h à 21h">
+        <label for="formHoraireRestoInput" class="form-label"
+          >Horaires du restaurant:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formHoraireRestoInput"
+          placeholder="Restaurant du Zoo ouvert de 11h à 14h puis de 18h à 21h"
+        />
       </div>
       <div class="mb-3">
-        <label for="formPhoneInput" class="form-label">Numero de téléphone:</label>
-        <input type="text" class="form-control" id="formPhoneInput" placeholder="00 00 00 00 00">
+        <label for="formPhoneInput" class="form-label"
+          >Numero de téléphone:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formPhoneInput"
+          placeholder="00 00 00 00 00"
+        />
       </div>
       <div class="mb-3">
-        <label for="formPhoneInput" class="form-label">Mail officiel:</label>
-        <input type="text" class="form-control" id="formPhoneInput" placeholder="contact@arcadiazoo.com">
+        <label for="formMailInput" class="form-label">Mail officiel:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="formMailInput"
+          placeholder="contact@arcadiazoo.com"
+        />
       </div>
       <div class="mb-3">
-        <label for="formMapInput" class="form-label">Lien pdf du plan du zoo:</label>
-        <input type="text" class="form-control" id="formMapInput" placeholder="ArcadiaZooMap.pdf">
+        <label for="formMapInput" class="form-label"
+          >Lien pdf du plan du zoo:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formMapInput"
+          placeholder="ArcadiaZooMap.pdf"
+        />
       </div>
     </form>
   </div>
 </div>
 
-<div class="bg-dark">
-  <div class="hero-scene-content text-center text-white">
-    <h2>Compte-rendus des vétérinaires</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Date</th>
-          <th scope="col">Animal</th>
-          <th scope="col">Prénom</th>
-          <th scope="col">Vétérinaire</th>
-          <th scope="col">Compte-rendus</th>
-        </tr>
-      </thead>
-      <tbody class="table-group-divider">
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="container p-3">
+  <!--Espace de séparation (Esthétique)-->
+  <div id="cr" class="container-bg pt-4">
+    <div class="container">
+      <br />
+    </div>
   </div>
+  <div class="bg-dark">
+    <div class="hero-scene-content text-center text-white">
+      <h2>Compte-rendus des vétérinaires</h2>
+    </div>
+  </div>
+  <table id="myTable" class="table">
+    <thead>
+      <tr class="p-4">
+        <th scope="col" onclick="sortTable(0)">Animal</th>
+        <th scope="col" onclick="sortTable(1)">Prénom</th>
+        <th scope="col" onclick="sortTable(2)">Etat</th>
+        <th scope="col" onclick="sortTable(3)">Nourriture proposée</th>
+        <th scope="col" onclick="sortTable(4)">Grammage</th>
+        <th scope="col" onclick="sortTable(5)">Vétérinaire</th>
+        <th scope="col" onclick="sortTable(6)">Date</th>
+        <th scope="col" onclick="sortTable(7)">Infos complémentaires</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Eléphant</td>
+        <td>Ellie</td>
+        <td>Bonne santé</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>veto.help@mail.fr</td>
+        <td>20-07-2024</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Lion</td>
+        <td>Leo</td>
+        <td>Bonne santé</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>veto.help@mail.fr</td>
+        <td>22-07-2024</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Zèbre</td>
+        <td>Zack</td>
+        <td>Bonne santé</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>veto.help@mail.fr</td>
+        <td>21-07-2024</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Cacatoès</td>
+        <td>Pinkie</td>
+        <td>Malade</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>zooanimo@mail.fr</td>
+        <td>24-07-2024</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="bg-dark">
-  <div class="hero-scene-content text-center text-white">
-    <h2>Statistiques des consultations</h2>
+<div class="container p-3">
+  <!--Espace de séparation (Esthétique)-->
+  <div id="stats" class="container-bg pt-4">
+    <div class="container">
+      <br />
+    </div>
   </div>
+  <div class="bg-dark">
+    <div class="hero-scene-content text-center text-white">
+      <h2>Statistiques des consultations</h2>
+    </div>
+  </div>
+  <table id="myStats" class="table">
+    <thead>
+      <tr class="p-4">
+        <th scope="col" onclick="sortStats(0)">Animal</th>
+        <th scope="col" onclick="sortStats(1)">Prénom</th>
+        <th scope="col" onclick="sortStats(2)">Nombre de vues</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Eléphant</td>
+        <td>Ellie</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Lion</td>
+        <td>Leo</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Zèbre</td>
+        <td>Zack</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Cacatoès</td>
+        <td>Pinkie</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

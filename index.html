@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kurale&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
 
     <title>Arcadia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="/Images/Logo.png" alt="Bootstrap" width="200" height="70">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Onglets du menu du header -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/habitats">Nos habitats</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/services">Nos services</a>
-                  </li>
-                  <li class="nav-item" data-show="disconnected">
-                    <a class="nav-link" href="/connexion">Connexion</a>
-                  </li>
-                  <li class="nav-item" data-show="connected">
-                    <button class="nav-link" id="décoBtn">Déconnexion</button>
-                  </li>
-                  <li class="nav-item" data-show="admin">
-                    <a class="nav-link" href="/admin">Administrateur</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg" data-bs-theme="primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/Images/Logo.png"
+              alt="Bootstrap"
+              width="200"
+              height="70"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Onglets du menu du header -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/habitats">Nos habitats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Nos services</a>
+              </li>
+              <li class="nav-item" data-show="disconnected">
+                <a class="nav-link" href="/connexion">Connexion</a>
+              </li>
+              <li class="nav-item" data-show="connected">
+                <button class="nav-link" id="décoBtn">Déconnexion</button>
+              </li>
+              <li class="nav-item" data-show="admin">
+                <a class="nav-link" href="/admin">Administrateur</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main id="main-page">
-        <!-- Le contenu de la page sera injecté ici-->
+      <!-- Le contenu de la page sera injecté ici-->
     </main>
 
     <footer class="bg-dark text-white text-center footer">
@@ -63,18 +81,27 @@
       <div class="row">
         <div class="col-12 col-lg-4">
           <h3>Nos horaires</h3>
-          <p><i class="bi bi-clock"></i> Ouvert du mardi au dimanche de 9h30 à 21h30</p>
-          <p><i class="bi bi-cup-hot-fill"></i> Restaurant du Zoo ouvert de 11h à 14h puis de 18h à 21h</p>
+          <p>
+            <i class="bi bi-clock"></i> Ouvert du mardi au dimanche de 9h30 à
+            21h30
+          </p>
+          <p>
+            <i class="bi bi-cup-hot-fill"></i> Restaurant du Zoo ouvert de 11h à
+            14h puis de 18h à 21h
+          </p>
         </div>
         <div class="col-6 col-lg-4">
           <h3>Pour nous contacter</h3>
-          <p><i class="bi bi-map"></i> Plan du zoo </p>
-          <p><i class="bi bi-telephone"></i> 00 00 00 00 00 </p>
+          <p><i class="bi bi-map"></i> Plan du zoo</p>
+          <p><i class="bi bi-telephone"></i> 00 00 00 00 00</p>
           <p><i class="bi bi-envelope"></i> contact@arcadiazoo.com</p>
         </div>
         <div class="col-6 col-lg-4">
           <h3>Réseaux sociaux</h3>
-          <h3><i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i></h3>
+          <h3>
+            <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+          </h3>
         </div>
       </div>
     </footer>
@@ -82,5 +109,5 @@
     <script src="js/auth/script.js"></script>
     <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
