@@ -4,10 +4,13 @@ const inputEmail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
+const formInscription = document.getElementById("formulaireInscription");
 
 inputEmail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
+
+btnValidation.addEventListener("click", InscrireUtilisateur);
 
 
 function validateForm(){
@@ -66,4 +69,41 @@ function validateConfirmationPassword(inputPwd, inputConfirmPwd){
         inputConfirmPwd.classList.remove("is-valid");
         return false;
     }
+}
+
+function InscrireUtilisateur(){
+    let dataForm = new FormData(formInscription);
+
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("X-AUTH-TOKEN", "••••••");
+
+    let raw = JSON.stringify({
+        "username": dataForm.get("email"),
+        "password": dataForm.get("password"),
+    });
+
+    let requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    fetch(apiUrl+"registration", requestOptions)
+        .then((response) => {
+            if(response.ok){
+                return response.json()
+        }
+            else{
+                Alert("Erreur lors de l'inscription");
+            }
+        })
+        .then((result =>{
+            alert("Inscription réussie, vous allez être redirigé vers la page de connexion");
+            document.location.href = "/connexion";
+        })
+        )
+        .catch((error) => console.error(error));
+
 }

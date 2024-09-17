@@ -2,6 +2,7 @@
 const tokenCookieName = "accesstoken";
 const RoleCookieName = "role";
 const décoBtn = document.getElementById("décoBtn");
+const apiUrl = "http://127.0.0.1:8000/api";
 
 décoBtn.addEventListener("click", déco);
 
