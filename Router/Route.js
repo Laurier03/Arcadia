@@ -1,11 +1,11 @@
-export default class Route {
-    constructor(url, title, pathHtml, authorize, pathJS = "") {
-      this.url = url;
-      this.title = title;
-      this.pathHtml = pathHtml;
-      this.pathJS = pathJS;
-      this.authorize = authorize;
-    }
+export default function Route(url, title, pathHtml, authorize, pathJS = "") {
+    return {
+        url: url,
+        title: title,
+        pathHtml: pathHtml,
+        pathJS: pathJS,
+        authorize: authorize
+    };
 }
 
 /*

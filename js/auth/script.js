@@ -25,9 +25,9 @@ function getToken(){
 }
 
 function setCookie(name,value,days) {
-    var expires = "";
+    let expires = "";
     if (days) {
-        var date = new Date();
+        let date = new Date();
         date.setTime(date.getTime() + (days*24*60*60*1000));
         expires = "; expires=" + date.toUTCString();
     }
@@ -35,12 +35,12 @@ function setCookie(name,value,days) {
 }
 
 function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(';');
+    for(const element of ca) {
+        let c = element;
+        while (c.startsWith(' ')) c = c.substring(1,c.length);
+        if (c.startsWith(nameEQ)) return c.substring(nameEQ.length,c.length);
     }
     return null;
 }
@@ -50,12 +50,7 @@ function eraseCookie(name) {
 }
 
 function isConnected(){
-    if(getToken() == null || getToken == undefined){
-        return false;
-    }
-    else{
-        return true;
-    }
+    return !(getToken() == null || getToken == undefined);
 }
 
 /*
@@ -103,7 +98,7 @@ function showAndHideElementsForRoles(){
 }
 
 function sortTable(n) {
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("myTable");
     switching = true;
     //Set the sorting direction to ascending:
@@ -146,19 +141,17 @@ function sortTable(n) {
         switching = true;
         //Each time a switch is done, increase this count by 1:
         switchcount ++;      
-      } else {
-        /*If no switching has been done AND the direction is "asc",
-        set the direction to "desc" and run the while loop again.*/
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
+      } else if (switchcount == 0 && dir == "asc") {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+        dir = "desc";
+        switching = true;
+    }
     }
   }
 
   function sortStats(n) {
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("myStats");
     switching = true;
     dir = "asc"; 
@@ -185,11 +178,15 @@ function sortTable(n) {
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
         switchcount ++;      
-      } else {
-        if (switchcount == 0 && dir == "asc") {
+      } else if (switchcount == 0 && dir == "asc") {
           dir = "desc";
           switching = true;
         }
-      }
     }
   }
+
+  function sanitizeHtml(text) {
+    const tempHtml = document.createElement("div");
+    tempHtml.textContent = text;
+    return tempHtml.innerHTML;
+}
