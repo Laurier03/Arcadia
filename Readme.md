@@ -12,7 +12,7 @@ ou invalider les avis laissés par les visiteurs sur le site. Les vétérinaires
 de laisser un compte rendu sous la forme de formulaire dans lequel ils pourront inscrire
 des informations concernant les animaux (leur état de santé, les détails de l’animal, un avis
 du médecin) ainsi que sur les habitat (état, avis). Les visiteurs quant à eux pourront laisser
-un avis sur le site à condition de laisser un pseudo, en revanche s’ils souhait utiliser la page
+un avis sur le site à condition de laisser un pseudo, en revanche s’ils souhaitent utiliser la page
 contact ils devront y laisser leur mail afin de recevoir une réponse.
 
 On devra construire plusieurs pages, une page d’accueil, une page habitat, une page
