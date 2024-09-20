@@ -7,7 +7,7 @@ btnConnexion.addEventListener("click", checkCredentials);
 function checkCredentials(){
     //Il faudra appeler l'API pour vérifier les crédentials en BDD
 
-    if(mailInput.value == "test@mail.com" && passwordInput.value == "123"){
+    if(mailInput.value == "test@mail.com" && passwordInput.value == "Arcadia2024"){
         //Il faut récupérer le vrai token
         const token = "abcd";
         setToken(token);
